@@ -4,7 +4,7 @@ namespace Tuna976\PWA;
 
 use Illuminate\Support\ServiceProvider;
 
-class CustomCalendarServiceProvider extends ServiceProvider
+class PWAServiceProvider extends ServiceProvider
 {
     public function boot()
     {

@@ -5,25 +5,20 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Tuna976\\CustomCalendar\\": "src/"
+            "Tuna976\\PWA\\": "src/"
         }
     },
     "authors": [
         {
             "name": "Terence Christopher",
-            "email": "terrence@terrenceberg.com",
-            "name": "Sanaullah Kiani",
-            "email": "kianisanaullah@gmail.com"
+            "email": "terrence@terrenceberg.com"
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
                 "Tuna976\\PWA\\PWAServiceProvider"
-            ],
-            "aliases": {
-                "PWA": "Tuna976\\PWA\\Facades\\PWA"
-            }
+            ]
         }
     },
     "require": {
