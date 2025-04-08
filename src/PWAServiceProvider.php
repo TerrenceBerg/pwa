@@ -17,14 +17,16 @@ class CustomCalendarServiceProvider extends ServiceProvider
         }
 
         // ✅ Publish Config (Ensure correct path)
-        // $this->publishes([
-        //     __DIR__.'/Config/customcalendar.php' => config_path('customcalendar.php'),
-        // ], 'config');
+        $this->publishes([
+            __DIR__.'/config/pwa-config.php' => config_path('pwa-config.php'),
+        ], 'config');
 
     }
 
     public function register()
     {
+        // ✅ Load Config (Ensure correct path)
+        $this->mergeConfigFrom(__DIR__.'/config/pwa-config.php', 'pwa-config');
         // ✅ Bind Calendar Service
         $this->app->singleton('PWA', function ($app) {
             return new PWA();
