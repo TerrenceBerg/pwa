@@ -16,6 +16,15 @@ class PWAServiceProvider extends ServiceProvider
             $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         }
 
+        // ✅ Publish resources 
+        $this->publishes([
+            __DIR__.'/resources/views/images' => resource_path('../public/images'),
+        ], 'pwa-images');
+
+        $this->publishes([
+            __DIR__.'/resources/views/manifest.json' => resource_path('../public/manifest.json'),
+        ], 'pwa-manifest');
+
         // ✅ Publish Config (Ensure correct path)
         $this->publishes([
             __DIR__.'/config/pwa-config.php' => config_path('pwa-config.php'),

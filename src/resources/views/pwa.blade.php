@@ -47,8 +47,7 @@
         <div class="content">
             <div class="title">Laravel PWA</div>
             <p>Your Progressive Web App is now ready!</p>
-
-            @include('components.pwa-install-button')
+            @include('pwa::components.pwa-install-button')
         </div>
     </div>
 
