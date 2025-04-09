@@ -12,7 +12,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Laravel PWA">
     <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="{{ url('/manifest.json') }}">
 
     <!-- Styles -->
     <style>

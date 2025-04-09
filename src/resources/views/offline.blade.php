@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="apple-touch-icon" href="{{ asset('images/icons/icon-192x192.png') }}">
-    <link rel="manifest" crossorigin="use-credentials" href="{{ asset('/manifest.json') }}">
+    <link rel="manifest" href="{{ url('/manifest.json') }}">
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
