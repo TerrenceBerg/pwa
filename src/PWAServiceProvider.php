@@ -23,11 +23,7 @@ class PWAServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/resources/views/js/serviceworker.js' => resource_path('../public/js/serviceworker.js'),
-        ], 'pwa-manifest');
-
-        $this->publishes([
-            __DIR__.'/resources/views/manifest.json' => resource_path('../public/manifest.json'),
-        ], 'pwa-manifest');
+        ], 'pwa-serviceworker');
 
         // ✅ Publish Config (Ensure correct path)
         $this->publishes([
