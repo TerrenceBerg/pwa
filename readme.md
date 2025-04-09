@@ -1,4 +1,4 @@
-# PWA for Laravel
+# PWA Progressive Web App for Laravel
 
 ## Installation
 
