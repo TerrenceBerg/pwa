@@ -31,3 +31,6 @@ Add the following to your layout file:
         });
     }
 </script>
+
+### where ever you would like the button to show add this 
+@include('pwa::components.pwa-install-button')
