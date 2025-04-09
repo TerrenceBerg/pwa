@@ -1,11 +1,23 @@
+# PWA for Laravel
+
+## Installation
+
+```bash
 composer require 976-tuna/pwa
 php artisan vendor:publish
+```
 
+## Integration
 
-add this to your layout file 
-add this to the body
+Add the following to your layout file:
+
+### In the `<head>` section:
+```html
 <link rel="manifest" href="{{ url('/manifest.json') }}">
-add this to the content area
+```
+
+### In the `<body>` section:
+```javascript
 <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
