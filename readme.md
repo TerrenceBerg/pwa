@@ -9,7 +9,9 @@ php artisan vendor:publish
 
 ## Integration
 to add a install button to your site, add this 
+```html
 @include('pwa::components.pwa-install-button')
+```
 
 Add the following to your layout file:
 
